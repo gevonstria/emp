@@ -26,4 +26,9 @@ class LogOutView(View):
         logout(request)
         return render(request, "login.html")
 
+class ChartsView(View):
+
+    def get(self, request):
+        return render(request, "master/chart.html")
+
 
