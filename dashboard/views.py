@@ -4,10 +4,10 @@ from django.views.generic import View
 from django.shortcuts import render, redirect
 
 # Create your views here.
-class DashboardView(View):
+class AdminDashboardView(View):
 
     def get(self,request):
-        return render(request, "dashboard.html")
+        return render(request, "admin_dashboard.html")
 
 
 
