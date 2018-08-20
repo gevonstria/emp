@@ -1,6 +1,6 @@
 from django.conf.urls import url
-from . import views
+from views import LogInView
 
 urlpatterns = [
-	url(r'master$', views.master_template),
+	url(r'^login$', LogInView.as_view()),
 ]
